@@ -2,6 +2,7 @@
   "name": "KelvinGraphics",
   "short_name": "KG",
   "start_url": "/KelvinGraphics/",
+  "scope": "/KelvinGraphics/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#9c77e8",
