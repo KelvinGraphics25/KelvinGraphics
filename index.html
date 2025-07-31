@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<<head>
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#9c77e8">
+<head>
+    
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#9c77e8">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log("Service Worker registered"))
+      .catch(error => console.error("SW registration failed:", error));
+  }
+</script>
+
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC8CVYN723"></script>
@@ -672,13 +681,6 @@ footer {
     <p>&copy; 2025 Graphic Design Brand. All rights reserved.</p>
    
   </footer>
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js')
-      .then(() => console.log("Service Worker registered"))
-      .catch(error => console.error("SW registration failed:", error));
-  }
-</script>
 
 <script>
     // ==== MOBILE MENU TOGGLE ====
