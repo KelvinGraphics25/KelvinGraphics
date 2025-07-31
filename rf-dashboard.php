@@ -18,6 +18,8 @@ $commission = $referral['commission'] ?? 0;
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="theme-color" content="#9c77e8">
+
   <meta charset="UTF-8">
   <title>Referral Dashboard - Kelvin Graphics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
