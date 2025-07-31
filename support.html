@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kelvin Graphics Payment Page </title>
+  <style>
+    :root {
+      --primary: #6a1b9a;
+      --light-bg: #f3e5f5;
+      --accent: #4a148c;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-bg);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--primary);
+      padding: 1rem;
+      color: white;
+      position: relative;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ddd;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background-color: var(--primary);
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .mobile-menu.show {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      border-top: 1px solid #ffffff33;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .mobile-menu a:hover {
+      background-color: var(--accent);
+    }
+
+    /* Main Content */
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    .message {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .support-links {
+      margin-top: 2rem;
+    }
+
+    .support-links h2 {
+      color: var(--accent);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .support-links a {
+      display: block;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem;
+      border-radius: 8px;
+      margin: 0.5rem auto;
+      width: 80%;
+      max-width: 300px;
+      transition: background 0.3s;
+    }
+
+    .support-links a:hover {
+      background-color: var(--accent);
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .mobile-menu {
+        width: 100%;
+        left: 0;
+        right: 0;
+      }
+
+      header {
+        font-size: 1.4rem;
+      }
+
+      .message {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Kelvin Graphics Payment</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="https://kelvinkikwa.ct.ws/#services" target="_blank">Back to Services</a>
+      <a href="https://kelvinkikwa.ct.ws/#reviews" target="_blank">Leave a Review</a>
+      <a href="https://wa.me/254799800366" target="_blank">Chat</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()" id="hamburgerBtn">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#" onclick="closeMenu()">Home</a>
+      <a href="https://kelvinkikwa.ct.ws/#services" onclick="closeMenu()">Back to Services</a>
+      <a href="https://kelvinkikwa.ct.ws/#reviews" onclick="closeMenu()">Leave a Review</a>
+      <a href="https://wa.me/254799800366" target="_blank" onclick="closeMenu()">Chat</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <img src="https://kelvinkikwa.infy.uk/mytill.png" alt="Lipa na M-Pesa - Kelvin Kikwa Till" />
+    <div class="message">
+      Your Payment/support helps keep Kelvin Graphics alive and growing!<br />
+      Complete via M-Pesa using the till above or choose an alternative method below.<br>
+      pesapal amount>=300<br>
+      Paypal (foreign)
+    </div>
+
+    <div class="support-links">
+      <h2>Pay/Support With Other Methods</h2>
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=Kelvinkikwa37%40gmail.com&currency_code=USD&item_name=Support/pay+Kelvin+Graphics
+" target="_blank">PayPal</a>
+      <a href="https://store.pesapal.com/kelvingrahicspayment">Pesapal</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Kelvin Graphics. All rights reserved.
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById('mobileMenu');
+    const hamburger = document.getElementById('hamburgerBtn');
+
+    function toggleMenu() {
+      mobileMenu.classList.toggle('show');
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('show');
+    }
+
+    document.addEventListener('click', function (e) {
+      if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+        closeMenu();
+      }
+    });
+  </script>
+</body>
+</html>

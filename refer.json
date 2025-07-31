@@ -1,0 +1,74 @@
+[
+    {
+        "name": "VICTOR",
+        "phone": "0799121388",
+        "email": "victorbaraka60@gmail.com",
+        "timestamp": "2025-06-29 14:12:38",
+        "password": "$2y$10$yE9PDgqL.TvR\/lG2eZweuOBghd7.zAsxp..fVSsPwWhQrgvrfQeZW",
+        "referral_id": "KG-25-V20"
+    },
+    {
+        "name": "Kelvin kikwa",
+        "phone": "0799800366",
+        "email": "Kelvinkikwa27@gmail.com",
+        "timestamp": "2025-06-29 14:48:09",
+        "password": "$2y$10$Yiw64AP1bTT0obU3C0qqEODwypmBRr2MzZAC\/PSQCkq9FOhDY7bIq",
+        "referral_id": "KG-25-K53",
+        "clients": 20,
+        "commission": 500
+    },
+    {
+        "name": "Robert Brown",
+        "phone": "0799800366",
+        "email": "mgitau403@gmail.com",
+        "timestamp": "2025-06-30 05:08:48",
+        "password": "$2y$10$fJViTBP4ptnAS4sYS9i\/UOa69NM.n3RZ0d3mIvO\/GCy0qlRHmXKoO",
+        "referral_id": "KG-25-R26"
+    },
+    {
+        "name": "Emmanuel said",
+        "phone": "0117585914",
+        "email": "saidikitsao6@gmail.com",
+        "timestamp": "2025-06-30 05:17:45",
+        "password": "$2y$10$RuYWrpxoxpwi9HsaGGB.qud2PhWZFq\/atPRBwBY70k0VYXyCUWX3K",
+        "referral_id": "KG-25-E47"
+    },
+    {
+        "name": "Mercy Nyaga",
+        "phone": "0740180321",
+        "email": "njerim738@gmail.com",
+        "timestamp": "2025-07-01 08:48:23",
+        "password": "$2y$10$dHS9u48tCUH1o9lIegvpTOGBOHJEFoxkrl3jE6.qZUgefjNHlgP5a",
+        "referral_id": "KG-25-M69"
+    },
+    {
+        "name": "Reuben kioko",
+        "phone": "0769845446",
+        "email": "naborreuben@gmail.com",
+        "timestamp": "2025-07-02 09:01:15",
+        "password": "$2y$10$0vb7BUU2Q9.hgh5V06a.rOK4w7kchL4vVyciAwKbJUrMSRttaX5sK",
+        "referral_id": "KG-25-R96"
+    },
+    {
+        "name": "FADHILI MWERI",
+        "phone": "0111651235",
+        "email": "fadhilimweri78@gmail.com",
+        "timestamp": "2025-07-03 13:12:31",
+        "password": "$2y$10$epYJ3KK.1UdUjAePdD7\/cOF8h5WqrRVp.bdRef5pS.Wn9OhFvrdXW",
+        "referral_id": "KG-25-F58"
+    },
+    {
+        "name": "FADHILI MWERI",
+        "phone": "0111651235",
+        "email": "fadhilimweri78@gmail.com",
+        "timestamp": "2025-07-03 13:13:06"
+    },
+    {
+        "name": "Justus Mtsonga Sonje",
+        "phone": "0701114657",
+        "email": "genialjustus@gmail.com",
+        "timestamp": "2025-07-05 06:27:52",
+        "password": "$2y$10$LeuMQ8p3m4f136E\/lZvMS.2bg1wO6GzZ6TZ\/GDCO2OlCC\/hYRhfX.",
+        "referral_id": "KG-25-J74"
+    }
+]

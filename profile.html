@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Professional Graphic Design Services - Logos, Branding, Social Media, Web and Print Design" />
+  <meta name="author" content="Graphic Designer" />
+  <title>Graphic Designer Profile</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Existing Styles -->
+  <link rel="stylesheet" href="profile2.css" />
+  <!-- Dark Mode & General Styles -->
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --card-bg: #f9f9f9;
+      --button-bg: #6a1b9a;
+      --button-color: #ffffff;
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --card-bg: #1e1e1e;
+      --button-bg: #bb86fc;
+      --button-color: #000000;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: var(--card-bg);
+    }
+
+    #image-slider {
+      width: 100%;
+      overflow: hidden;
+      min-height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f0fa;
+      flex-direction: column;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .intro {
+      margin-bottom: 30px;
+      background: var(--card-bg);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .buy-button {
+      background-color: var(--button-bg);
+      color: var(--button-color);
+      padding: 6px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    .socials {
+      text-align: center;
+      margin-top: 40px;
+      background: var(--card-bg);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .social-icon {
+      margin: 0 10px;
+      color: var(--text-color);
+    }
+
+    .dark-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--button-bg);
+      color: var(--button-color);
+      padding: 10px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Dark Mode Toggle Button -->
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+
+  <header>
+    <h1>Welcome to My Graphic Design Portfolio</h1>
+  </header>
+
+  <section id="image-slider">
+    <img id="slider-img" src="Two.jpeg" alt="Portfolio Image" style="max-width: 100%; height: auto; border-radius: 10px; display: block;">
+  </section>
+
+  <main>
+    <section class="intro">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate graphic designer specializing in modern, clean, and effective designs. My services
+        include everything from branding and logo design to print media and social media content creation.
+      </p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Tools I Use</h3>
+        <ul>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>Photopeia</li>
+          <li>Canva premium subscription</li>
+          <li>Visual Studio Code</li>
+          <li>Web hosting platform</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Services & Delivery Time</h3>
+        <ul>
+          <li>Logo Design - 2 Days</li>
+          <li>Branding - 3 Days</li>
+          <li>Social Media Graphics - 1 Day</li>
+          <li>Print Design - 2 Days</li>
+          <li>Web Design - 7 Days</li>
+          <li>Resume Design - 1 Day</li>
+          <li>KRA Pin Registration - 10 minutes</li>
+          <li>Event planning - 2–3 Days</li>
+          <li>Filing tax returns - 10 minutes</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Pricing</h3>
+        <ul>
+          <li>Logo Design - Ksh 500 <a href="https://wa.me/254799800366?text=I%20am%20willing%20to%20buy%20Logo%20Design..." class="buy-button">Buy</a></li>
+          <li>Branding - Ksh 1,000 <a href="https://wa.me/254799800366?text=I%20am%20willing%20to%20buy%20Branding..." class="buy-button">Buy</a></li>
+          <li>Social Media Graphics - Ksh 150 <a href="https://wa.me/254799800366?text=I%20am%20willing..." class="buy-button">Buy</a></li>
+          <li>Print Design - Ksh 500 <a href="https://wa.me/254799800366?text=I%20am%20willing..." class="buy-button">Buy</a></li>
+          <li>Web Design - Ksh 1,500 + 500/mo Maintenance <a href="https://wa.me/254799800366?text=I%20am%20willing..." class="buy-button">Buy</a></li>
+          <li>Resume Design - Ksh 500 <a href="https://wa.me/254799800366?text=I%20am%20willing..." class="buy-button">Buy</a></li>
+          <li>KRA Pin Registration - Ksh 150 <a href="https://wa.me/254799800366?text=I%20am%20willing..." class="buy-button">Buy</a></li>
+          <li>Event Planning - Ksh 1000 <a href="https://wa.me/254799800366?text=I%20am%20willing..." class="buy-button">Buy</a></li>
+          <li><strong>Filing tax return</strong><br>
+            ✔ Individual - Ksh 300<br>
+            ✔ Small Business - Ksh 500<br>
+            ✔ Corporate - Ksh 1000<br>
+            ✔ VAT & Rental Income - Ksh 1000<br>
+            <a href="https://wa.me/254799800366?text=I%20am%20willing%20to%20buy%20KRA%20Filing%20Tax..." class="buy-button">Buy</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dark Mode Script -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    }
+
+    window.onload = () => {
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-mode');
+      }
+    }
+  </script>
+</body>
+
+</html>

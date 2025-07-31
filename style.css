@@ -1,0 +1,259 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6a1b9a;
+  color: white;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav {
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Home Section */
+#home {
+  background-color: rgba(106, 27, 154, 0.1); /* Main color but less intense */
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  color: #6a1b9a;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  color: #6a1b9a;
+}
+
+/* Services Section */
+#services {
+  background-color: #f3e5f5; /* Light purple background */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2.5rem;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #9c27b0; /* Purple border */
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+}
+
+.service-card h3 {
+  font-size: 1.8rem;
+  color: #6a1b9a;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Gallery Section */
+#gallery {
+  padding: 50px 20px;
+}
+
+.gallery h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout for Gallery */
+.media-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Creates a responsive grid */
+  gap: 20px; /* Space between grid items */
+  justify-items: center; /* Centers each item */
+}
+
+.media-box {
+  width: 100%;
+  height: 200px;
+  border: 2px solid #6a1b9a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px 20px;
+  background-color: #f3e5f5;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  background: #6a1b9a;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+form button:hover {
+  background: #8e24aa;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4a148c;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #6a1b9a;
+    width: 200px;
+    display: none;
+    border-radius: 8px;
+  }
+
+  .nav-links li {
+    text-align: right;
+    padding: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  /* Adjust Gallery Layout for Small Screens */
+  .media-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust number of columns */
+  }
+
+  /* Adjust Contact Form Inputs */
+  form input, form textarea {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    font-size: 1rem;
+  }
+
+  /* Adjust Padding and Font Size for Smaller Screens */
+  #home {
+    padding: 60px 10px;
+  }
+
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+}
