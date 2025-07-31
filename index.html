@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<<head>
+    <meta name="theme-color" content="#9c77e8">
+
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YC8CVYN723"></script>
 <script>
@@ -669,6 +671,13 @@ footer {
     <p>&copy; 2025 Graphic Design Brand. All rights reserved.</p>
    
   </footer>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log("Service Worker registered"))
+      .catch(error => console.error("SW registration failed:", error));
+  }
+</script>
 
 <script>
     // ==== MOBILE MENU TOGGLE ====
